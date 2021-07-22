@@ -1,4 +1,75 @@
 package com.example.lbooks;
 
-public class ViewPageAdpater {
+import android.content.Context;
+import android.provider.ContactsContract;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.constraintlayout.widget.ConstraintSet;
+import androidx.viewpager.widget.PagerAdapter;
+
+public class ViewPageAdpater extends PagerAdapter {
+
+    Context context;
+
+    int images[]=
+            {
+                    R.drawable.book,
+                    R.drawable.lend,
+                    R.drawable.money
+
+            };
+    int headings[] ={
+            R.string.heading_one, R.string.heading_two,R.string.heading_three
+
+
+    };
+
+    int descriptions[]={
+            R.string.desc_one,R.string.desc_two,R.string.desc_three
+    };
+
+    public ViewPageAdpater(Context context){
+        this.context =context;
+    }
+
+
+    @Override
+    public int getCount() {
+        return headings.length;
+    }
+
+    @Override
+    public boolean isViewFromObject(@NonNull View view, @NonNull Object object) {
+        return view == (LinearLayout) object;
+
+    }
+
+    @NonNull
+    @Override
+    public Object instantiateItem(@NonNull ViewGroup container, int position) {
+        LayoutInflater layoutInflater = (LayoutInflater) context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
+        View view = layoutInflater.inflate(R.layout.slider_layout,container,false);
+
+        ImageView sildeImage =(ImageView) view.findViewById(R.id.titleimage);
+        TextView sildeHeading =(TextView) view.findViewById(R.id.texttitle);
+        TextView sildeDescription =(TextView) view.findViewById(R.id.textdescription);
+
+        sildeImage.setImageResource(images[position]);
+        sildeHeading.setText(headings[position]);
+        sildeDescription.setText(descriptions[position]);
+        container.addView(view);
+        return view;
+    }
+
+    @Override
+    public void destroyItem(@NonNull ViewGroup container, int position, @NonNull Object object) {
+        container.removeView((LinearLayout)object);
+    }
 }
+
