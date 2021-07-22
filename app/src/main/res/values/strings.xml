@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">LBOOKS</string>
+
+    <string name="heading_one">Be Enlighten</string>
+    <string name="heading_two">Lend Books</string>
+    <string name="heading_three">Easy Exchange</string>
+
+    //Description
+    <string name="desc_one">Grow your Knowledge By Reading and Exploring New Books</string>
+    <string name="desc_two">A Platform To Lend Books And get Book From Peers</string>
+    <string name="desc_three">No Need Of Cash. Easy Return Of Books</string>
+
 </resources>
