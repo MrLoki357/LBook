@@ -94,17 +94,17 @@ public class SplashScreen extends AppCompatActivity {
     @RequiresApi(api = Build.VERSION_CODES.M)
     public void setUpindicator(int position)
     {
-        dots=new TextView[4];
+        dots=new TextView[3];
         nDotLayout.removeAllViews();
 
         for(int i=0; i < dots.length;i++){
             dots[i]=new TextView(this);
             dots[i].setText(Html.fromHtml("&#8226"));
             dots[i].setTextSize(35);
-            dots[i].setTextColor(getResources().getColor(R.color.inactive,getApplicationContext().getTheme()));
+            dots[i].setTextColor(getResources().getColor(R.color.teal_200,getApplicationContext().getTheme()));
 
         }
-        dots[position].setTextColor(getResources().getColor(R.color.active,getApplicationContext().getTheme()));
+        dots[position].setTextColor(getResources().getColor(R.color.purple_200,getApplicationContext().getTheme()));
     }
 
     ViewPager.OnPageChangeListener viewListner = new ViewPager.OnPageChangeListener() {
