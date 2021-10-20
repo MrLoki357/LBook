@@ -9,14 +9,12 @@ import android.view.View;
 import android.view.ViewGroup;
 
 
-public class fragment2 extends Fragment {
+public class nav_home extends Fragment {
 
-    View view;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        view= inflater.inflate(R.layout.fragment_fragment2, container, false);
-        return  view;
+        return inflater.inflate(R.layout.fragment_nav_home, container, false);
     }
 }

@@ -5,45 +5,48 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button frag1,frag2;
+    Button nxtreg,nxtlogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        frag1 = findViewById(R.id.sign);
-        frag2 = findViewById(R.id.reg);
 
-        frag1.setOnClickListener(new View.OnClickListener() {
+        nxtreg = findViewById(R.id.next_reg);
+        nxtlogin = findViewById(R.id.Signin);
+
+        nxtreg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                replace(new fragment1());
+                Intent i = new Intent(MainActivity.this,register_page.class);
+                startActivity(i);
+                finish();
 
             }
         });
-        frag2.setOnClickListener(new View.OnClickListener() {
+
+        nxtlogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                replace(new fragment2());
+                Intent j = new Intent(MainActivity.this,mainpage.class);
+                startActivity(j);
+                finish();
+
             }
         });
+
+
+
 
     }
 
-        private void replace(Fragment fragment){
 
-            FragmentManager fragmentManager = getSupportFragmentManager();
-            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-            fragmentTransaction.replace(R.id.framelayout,fragment);
-            fragmentTransaction.commit();
-
-        }
 
 }

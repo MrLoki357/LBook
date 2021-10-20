@@ -9,16 +9,13 @@ import android.view.View;
 import android.view.ViewGroup;
 
 
-public class fragment1 extends Fragment {
-
-    View view;
+public class nav_search extends Fragment {
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        view = inflater.inflate(R.layout.fragment_fragment1, container, false);
-        return view;
+        return inflater.inflate(R.layout.fragment_nav_search, container, false);
     }
 }

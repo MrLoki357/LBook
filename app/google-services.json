@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1047690043679",
+    "project_id": "lbooks-afb7d",
+    "storage_bucket": "lbooks-afb7d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1047690043679:android:dcebab6aa7fed02a57d02a",
+        "android_client_info": {
+          "package_name": "com.example.lbooks"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1047690043679-2qmabomm5rbfjqq424jt12c74p3kknja.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHWZRNbDZ385lketzVVfwVFmgauzTfGGY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1047690043679-2qmabomm5rbfjqq424jt12c74p3kknja.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
