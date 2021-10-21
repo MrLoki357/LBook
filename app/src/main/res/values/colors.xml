@@ -9,5 +9,9 @@
     <color name="white">#FFFFFFFF</color>
     <color name="inactive">#C4C4C4</color>
     <color name="active">#50C2C9</color>
+    <color name="startblue">#09c6df</color>
+    <color name="endblue">#0bcce6</color>
+    <color name="graylight">#EEEDEB</color>
+
 
 </resources>
