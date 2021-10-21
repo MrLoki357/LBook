@@ -3,13 +3,13 @@
 
     <item
         android:id="@+id/nav_home"
-        android:icon="@drawable/ic_baseline_home_24"
-        android:title="Home"
+        android:icon="@drawable/giving"
+        android:title="Donate"
         />
     <item
         android:id="@+id/nav_search"
-        android:icon="@drawable/ic_baseline_search_24"
-        android:title="Search"></item>
+        android:icon="@drawable/lendhj"
+        android:title="Lend"></item>
 
     <item
         android:id="@+id/nav_profile"
