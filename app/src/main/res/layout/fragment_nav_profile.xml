@@ -9,11 +9,11 @@
     android:orientation="vertical">
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="405dp">
+        android:layout_height="300dp">
         <LinearLayout
             android:background="@drawable/gradientbackground"
             android:layout_width="match_parent"
-            android:layout_height="350dp"
+            android:layout_height="250dp"
             android:orientation="vertical">
             <ImageView
                 android:layout_marginTop="45dp"
@@ -22,7 +22,7 @@
                 android:layout_height="150dp"
                 android:src="@drawable/propro"/>
             <TextView
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="10dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -40,6 +40,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="1dp">
         <LinearLayout
+            android:id="@+id/smscare"
             android:orientation="horizontal"
             android:paddingLeft="25dp"
             android:layout_width="match_parent"
@@ -54,10 +55,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingLeft="20dp"
-                android:text="Wiliam@gmail.com"/>
+                android:text="Customer care"/>
         </LinearLayout>
         <LinearLayout
-            android:layout_marginTop="25dp"
+
+            android:id="@+id/sendphone"
+            android:layout_marginTop="15dp"
             android:orientation="horizontal"
             android:paddingLeft="25dp"
             android:layout_width="match_parent"
@@ -76,7 +79,7 @@
                 android:text="+91 9442487451"/>
         </LinearLayout>
         <LinearLayout
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="15dp"
             android:orientation="horizontal"
             android:paddingLeft="25dp"
             android:layout_width="match_parent"
@@ -95,7 +98,7 @@
                 android:text="India"/>
         </LinearLayout>
         <LinearLayout
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="15dp"
             android:orientation="horizontal"
             android:paddingLeft="25dp"
             android:layout_width="match_parent"
@@ -116,9 +119,10 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/logout"
         android:textColor="#fff"
         android:background="@drawable/buttonstyleithgradient"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
