@@ -60,7 +60,7 @@
         app:layout_constraintTop_toBottomOf="@+id/welcome" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/inputPassword"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
@@ -68,11 +68,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/user" />
+        app:layout_constraintTop_toBottomOf="@+id/inputEmail" />
 
 
     <EditText
-        android:id="@+id/editText1"
+        android:id="@+id/inputConfirmPassword"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="76dp"
@@ -80,7 +80,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/user" />
+        app:layout_constraintTop_toBottomOf="@+id/inputEmail" />
 
     <Button
         android:id="@+id/regin"
@@ -91,10 +91,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText1" />
+        app:layout_constraintTop_toBottomOf="@+id/inputConfirmPassword" />
 
     <EditText
-        android:id="@+id/user"
+        android:id="@+id/inputEmail"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
